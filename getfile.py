@@ -33,7 +33,7 @@ def decompress(source, dest):
     success = False
     # do we recognize the extension?
     compressed_extensions = ('.zip', '.gz', '.bz2', '.tgz', '.tbz', '.tar')
-    root, ext = os.path.splitext(local_file)
+    root, ext = os.path.splitext(source)
 
     # check if we know how to handle this file
     if ext in compressed_extensions:
